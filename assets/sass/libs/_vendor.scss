@@ -2,375 +2,355 @@
 
 // Vars.
 
-	/// Vendor prefixes.
-	/// @var {list}
-	$vendor-prefixes: (
-		'-moz-',
-		'-webkit-',
-		'-ms-',
-		''
-	);
+/// Vendor prefixes.
+/// @var {list}
+$vendor-prefixes: (
+  '-moz-',
+  '-webkit-',
+  '-ms-',
+  ''
+);
 
-	/// Properties that should be vendorized.
-	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
-	/// @var {list}
-	$vendor-properties: (
+/// Properties that should be vendorized.
+/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
+/// @var {list}
+$vendor-properties: (
 
-		// Animation.
+  
 			'animation',
-			'animation-delay',
-			'animation-direction',
-			'animation-duration',
-			'animation-fill-mode',
-			'animation-iteration-count',
-			'animation-name',
-			'animation-play-state',
-			'animation-timing-function',
+			'animation  lay',
+			'animation  rection',
+			'animation  ration',
+			'animation  ll-mode',
+			'animation  eration-count',
+			'animation  me',
+			'animation  ay-state',
+			'animation  ming-function',
 
-		// Appearance.
-			'appearance',
+		
+			'appear  ce',
 
-		// Backdrop filter.
+		
 			'backdrop-filter',
 
-		// Background image options.
-			'background-clip',
-			'background-origin',
+	  			'background-clip',
+			'background-origin  
 			'background-size',
 
-		// Box sizing.
+		
 			'box-sizing',
 
-		// Clip path.
-			'clip-path',
+		
+			  ip-path',
 
-		// Filter effects.
-			'filter',
+		
+			'fil  ',
 
-		// Flexbox.
-			'align-content',
+		
+			'align-con  nt',
 			'align-items',
-			'align-self',
+			'align-  lf',
 			'flex',
-			'flex-basis',
-			'flex-direction',
-			'flex-flow',
+			'flex-basis'  			'flex-direction',
+			'flex-flo  ,
 			'flex-grow',
-			'flex-shrink',
-			'flex-wrap',
-			'justify-content',
-			'order',
+			'flex-shrin  
+			'flex-wrap'  		'justify-con  t',
+			'  er',
 
-		// Font feature.
-			'font-feature-settings',
-			'font-language-override',
-			'font-variant-ligatures',
+		
+			'f  -feature-settings'  		'font-langu  -override',
+	  font-variant-li  ures',
 
-		// Font kerning.
-			'font-kerning',
+		
+		  ont-kerning',
 
-		// Fragmented borders and backgrounds.
-			'box-decoration-break',
+		
+	  box-decora  on-break',
 
-		// Grid layout.
+		
 			'grid-column',
-			'grid-column-align',
-			'grid-column-end',
+			'grid-col  -align',
+			'grid-column-e  ,
 			'grid-column-start',
-			'grid-row',
+	  'grid-row',
 			'grid-row-align',
-			'grid-row-end',
+			'  id-row-end',
 			'grid-row-start',
 			'grid-template-columns',
-			'grid-template-rows',
+			'g  d-template-rows',
 
-		// Hyphens.
-			'hyphens',
-			'word-break',
+		
+			'hyphens'  		'word-break',
 
-		// Masks.
-			'mask',
-			'mask-border',
-			'mask-border-outset',
-			'mask-border-repeat',
-			'mask-border-slice',
-			'mask-border-source',
-			'mask-border-width',
-			'mask-clip',
-			'mask-composite',
-			'mask-image',
-			'mask-origin',
-			'mask-position',
-			'mask-repeat',
-			'mask-size',
+		
+	  mask',
+			'mask-bor  ',
+			'mask-border-ou  t',
+			'mask  rder-repeat',
+			'  k-border-slice',  	'mask-border-sour  ,
+			'mask-border-width',  	'mask-clip',
+			'mask-  mposite',
+			'mask-image',  	'mask-origin',  		'mask-position',
+		  ask-repeat',
+		  ask-size',
 
-		// Multicolumn.
-			'break-after',
-			'break-before',
+		
+			'bre  after',
+			'break-befo  ,
 			'break-inside',
-			'column-count',
-			'column-fill',
-			'column-gap',
-			'column-rule',
-			'column-rule-color',
-			'column-rule-style',
-			'column-rule-width',
-			'column-span',
-			'column-width',
+  'column-count',
+			'co  n-fill',
+			'column-g  ,
+			'column-  e',
+			'column-rul  olor',
+			'col  -rule-style',
+	  column-rule-width  			'column-span  			'column-wid  ',
 			'columns',
 
-		// Object fit.
-			'object-fit',
-			'object-position',
+		
+			'object-fi  
+			'object-posi  n',
 
-		// Regions.
-			'flow-from',
-			'flow-into',
-			'region-fragment',
+		
+			'flow  om',
+			'flow-in  ,
+			'region-fr  ent',
 
-		// Scroll snap points.
-			'scroll-snap-coordinate',
-			'scroll-snap-destination',
-			'scroll-snap-points-x',
-			'scroll-snap-points-y',
-			'scroll-snap-type',
+		
+			'  oll-snap-coordi  e',
+			'scroll-snap-d  ination',
+			'scroll-  p-points-x',
+			'scro  snap-points-y',  	'scroll-snap-ty  ,
 
-		// Shapes.
-			'shape-image-threshold',
-			'shape-margin',
-			'shape-outside',
+		
+			'sh  e-image-threshold',
+			'shape-ma  n',
+			'shape-outsid  ,
 
-		// Tab size.
+		
 			'tab-size',
 
-		// Text align last.
-			'text-align-last',
-
-		// Text decoration.
-			'text-decoration-color',
+		
+			  xt-align-last  
+		
+			'text-decorat  n-color',
 			'text-decoration-line',
-			'text-decoration-skip',
-			'text-decoration-style',
+			'text-decora  n-skip',
+			'text-decoratio  tyle',
 
-		// Text emphasis.
-			'text-emphasis',
-			'text-emphasis-color',
-			'text-emphasis-position',
+		
+			'text-emph  s',
+			'text-emphasis-co  ',
+			'text-emphasis-  sition',
 			'text-emphasis-style',
 
-		// Text size adjust.
-			'text-size-adjust',
+		
+  'text-size-adjus  
 
-		// Text spacing.
-			'text-spacing',
+		
+			'text-spac  g',
 
-		// Transform.
+		
 			'transform',
-			'transform-origin',
+			't  nsform-origin',
 
-		// Transform 3D.
-			'backface-visibility',
+		
+			'backface-visibility  
 			'perspective',
 			'perspective-origin',
-			'transform-style',
+			'  nsform-style',
 
-		// Transition.
-			'transition',
-			'transition-delay',
-			'transition-duration',
+		
+			't  sition',
+			'transition-  ay',
+			'transition-durati  ',
 			'transition-property',
-			'transition-timing-function',
+			'trans  on-timing-function',
 
-		// Unicode bidi.
-			'unicode-bidi',
+	  		'unicode-bidi',
 
-		// User select.
-			'user-select',
+		
+			'  r-select',
 
-		// Writing mode.
-			'writing-mode',
+		
+			'writi  -mode',
 
-	);
+	)                              ;
 
-	/// Values that should be vendorized.
-	/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
-	/// @var {list}
-	$vendor-values: (
+/// Values that should be vendorized.
+/// Data via caniuse.com, github.com/postcss/autoprefixer, and developer.mozilla.org
+/// @var {list}
+$vendor-values: (
 
-		// Cross fade.
+  
 			'cross-fade',
 
-		// Element function.
-			'element',
+		
+			'element  
 
-		// Filter function.
+		
 			'filter',
 
-		// Flexbox.
+		
 			'flex',
-			'inline-flex',
+			  nline-flex',
 
-		// Grab cursors.
+		
 			'grab',
-			'grabbing',
+			'gr  bing',
 
-		// Gradients.
-			'linear-gradient',
-			'repeating-linear-gradient',
-			'radial-gradient',
-			'repeating-radial-gradient',
+		
+			'linear-g  ient',
+			'repea  ng-linear-gradient',
+			'rad  -gradient',
+	  'repeating-radial-gradient',
 
-		// Grid layout.
-			'grid',
+		
+			  id',
 			'inline-grid',
 
-		// Image set.
-			'image-set',
+		
+		  mage-set',
 
-		// Intrinsic width.
-			'max-content',
+		
+			'  -content',
 			'min-content',
-			'fit-content',
+	  'fit-content',
 			'fill',
-			'fill-available',
-			'stretch',
+	  fill-available',  		'stretch',
 
-		// Sticky position.
+		
 			'sticky',
 
-		// Transform.
+  
 			'transform',
 
-		// Zoom cursors.
+		
 			'zoom-in',
-			'zoom-out',
+			  om-out',
 
-	);
+	)             ;
 
 // Functions.
 
-	/// Removes a specific item from a list.
-	/// @author Hugo Giraudel
-	/// @param {list} $list List.
-	/// @param {integer} $index Index.
-	/// @return {list} Updated list.
-	@function remove-nth($list, $index) {
+/// Removes a specific item from a list.
+/// @author Hugo Giraudel
+/// @param {list} $list List.
+/// @param {integer} $index Index.
+/// @return {list} Updated list.
+@function remove-nth($list, $index) {
 
-		$result: null;
+  $result: null;
 
-		@if type-of($index) != number {
-			@warn "$index: #{quote($index)} is not a number for `remove-nth`.";
-		}
-		@else if $index == 0 {
-			@warn "List index 0 must be a non-zero integer for `remove-nth`.";
-		}
-		@else if abs($index) > length($list) {
-			@warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
-		}
-		@else {
+  @if type-of($index) != number {
+    @warn "$index: #{quote($index)} is not a number for `remove-nth`.";
+  }
 
-			$result: ();
-			$index: if($index < 0, length($list) + $index + 1, $index);
+  @else if $index == 0 {
+    @warn "List index 0 must be a non-zero integer for `remove-nth`.";
+  }
 
-			@for $i from 1 through length($list) {
+  @else if abs($index) > length($list) {
+    @warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
+  }
 
-				@if $i != $index {
-					$result: append($result, nth($list, $i));
-				}
+  @else {
 
-			}
+    $result: ();
+    $index: if($index < 0, length($list) + $index + 1, $index);
 
-		}
+    @for $i from 1 through length($list) {
+      @if $i != $index {
+        $result: append($result, nth($list, $i));
+      }
+    }
+  }
 
-		@return $result;
+  @return $result;
+}
 
-	}
+/// Replaces a substring within another string.
+/// @author Hugo Giraudel
+/// @param {string} $string String.
+/// @param {string} $search Substring.
+/// @param {string} $replace Replacement.
+/// @return {string} Updated string.
+@function str-replace($string, $search, $replace: '') {
 
-	/// Replaces a substring within another string.
-	/// @author Hugo Giraudel
-	/// @param {string} $string String.
-	/// @param {string} $search Substring.
-	/// @param {string} $replace Replacement.
-	/// @return {string} Updated string.
-	@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
 
-		$index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
 
-		@if $index {
-			@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-		}
+  @return $string;
+}
 
-		@return $string;
+/// Replaces a substring within each string in a list.
+/// @param {list} $strings List of strings.
+/// @param {string} $search Substring.
+/// @param {string} $replace Replacement.
+/// @return {list} Updated list of strings.
+@function str-replace-all($strings, $search, $replace: '') {
+  @each $string in $strings {
+    $strings: set-nth($strings, index($strings, $string), str-replace($string, $search, $replace));
+  }
 
-	}
-
-	/// Replaces a substring within each string in a list.
-	/// @param {list} $strings List of strings.
-	/// @param {string} $search Substring.
-	/// @param {string} $replace Replacement.
-	/// @return {list} Updated list of strings.
-	@function str-replace-all($strings, $search, $replace: '') {
-
-		@each $string in $strings {
-			$strings: set-nth($strings, index($strings, $string), str-replace($string, $search, $replace));
-		}
-
-		@return $strings;
-
-	}
+  @return $strings;
+}
 
 // Mixins.
 
-	/// Wraps @content in vendorized keyframe blocks.
-	/// @param {string} $name Name.
-	@mixin keyframes($name) {
+/// Wraps @content in vendorized keyframe blocks.
+/// @param {string} $name Name.
+@mixin keyframes($name) {
+  @-moz-keyframes #{$name} { @content; }
 
-		@-moz-keyframes #{$name} { @content; }
-		@-webkit-keyframes #{$name} { @content; }
-		@-ms-keyframes #{$name} { @content; }
-		@keyframes #{$name} { @content; }
+  @-webkit-keyframes #{$name} { @content; }
 
-	}
+  @-ms-keyframes #{$name} { @content; }
 
-	/// Vendorizes a declaration's property and/or value(s).
-	/// @param {string} $property Property.
-	/// @param {mixed} $value String/list of value(s).
-	@mixin vendor($property, $value) {
+  @keyframes #{$name} { @content; }
+}
 
-		// Determine if property should expand.
-			$expandProperty: index($vendor-properties, $property);
+/// Vendorizes a declaration's property and/or value(s).
+/// @param {string} $property Property.
+/// @param {mixed} $value String/list of value(s).
+@mixin vendor($property, $value) {
 
-		// Determine if value should expand (and if so, add '-prefix-' placeholder).
-			$expandValue: false;
+  // Determine if property should expand.
+  $expandProperty: index($vendor-properties, $property);
 
-			@each $x in $value {
-				@each $y in $vendor-values {
-					@if $y == str-slice($x, 1, str-length($y)) {
+  // Determine if value should expand (and if so, add '-prefix-' placeholder).
+  $expandValue: false;
 
-						$value: set-nth($value, index($value, $x), '-prefix-' + $x);
-						$expandValue: true;
+  @each $x in $value {
+    @each $y in $vendor-values {
+      @if $y == str-slice($x, 1, str-length($y)) {
 
-					}
-				}
-			}
+        $value: set-nth($value, index($value, $x), '-prefix-' + $x);
+        $expandValue: true;
+      }
+    }
+  }
 
-		// Expand property?
-			@if $expandProperty {
-			    @each $vendor in $vendor-prefixes {
-			        #{$vendor}#{$property}: #{str-replace-all($value, '-prefix-', $vendor)};
-			    }
-			}
+  // Expand property?
+  @if $expandProperty {
+    @each $vendor in $vendor-prefixes {
+      #{$vendor}#{$property}: #{str-replace-all($value, '-prefix-', $vendor)};
+    }
+  }
 
-		// Expand just the value?
-			@elseif $expandValue {
-			    @each $vendor in $vendor-prefixes {
-			        #{$property}: #{str-replace-all($value, '-prefix-', $vendor)};
-			    }
-			}
+  // Expand just the value?
+  @elseif $expandValue {
+    @each $vendor in $vendor-prefixes {
+      #{$property}: #{str-replace-all($value, '-prefix-', $vendor)};
+    }
+  }
 
-		// Neither? Treat them as a normal declaration.
-			@else {
-		        #{$property}: #{$value};
-			}
-
-	}
+  // Neither? Treat them as a normal declaration.
+  @else {
+    #{$property}: #{$value};
+  }
+}
