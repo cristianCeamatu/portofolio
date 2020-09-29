@@ -1,15 +1,293 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/app.css">
-  <title>Testing linters</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <title>Cristian Viorel Ceamatu | Portofolio</title>
 </head>
 
-<body>
-  <h1>Hello world!</h1>
+<body class="is-preload">
+  <!-- <span id="typed"></span> -->
+
+  <!-- Header -->
+  <section id="header">
+    <header>
+      <span class="image avatar"><img src="images/avatar.jpg" alt="Ceamatu Cristian Viorel" /></span>
+      <h1 id="logo"><a href="#">Cristian Viorel Ceamatu</a></h1>
+      <p>Passionate Full-stack Web Developer <br> Team player</p>
+    </header>
+    <nav id="nav">
+      <ul>
+        <li><a href="#one" class="active">About</a></li>
+        <li><a href="#two">Things I Can Do</a></li>
+        <li><a href="#three">A Few Accomplishments</a></li>
+        <li><a href="#four">Contact</a></li>
+      </ul>
+    </nav>
+    <footer>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/ceamatu-cristian/" target="_blank"
+            class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+        <li><a href="https://github.com/cristianCeamatu" target="_blank" class="icon brands fa-github"><span
+              class="label">Github</span></a></li>
+        <li><a href="https://twitter.com/CristianCeamatu" target="_blank" class="icon brands fa-twitter"><span
+              class="label">Twitter</span></a></li>
+        <li><a href="mailto:cristian.ceamatu@gmail.com" target="_blank" class="icon solid fa-envelope"><span
+              class="label">Email</span></a></li>
+        <li><a href="https://www.facebook.com/ceamatu.cristian/" target="_blank" class="icon brands fa-facebook-f"><span
+              class="label">Facebook</span></a></li>
+      </ul>
+    </footer>
+  </section>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- Showcase -->
+      <section id="showcase">
+        <div class="image main" data-position="center">
+          <img src="images/banner.jpg" alt="" />
+        </div>
+        <div class="container">
+          <header class="major">
+            <h2>About me</h2>
+            <p>I always have a positive attitude <span class="h2">&#129299;</span> and regularly try to make the people
+              around me share the same
+              feeling <span class="h2">&#129322;</span></p>
+          </header>
+          <p>I started teaching myself how to code in 2015 and since the first 'Hello world!' I felt that this is a
+            career that perfectly fits my skills. I always loved Maths and developed a native skill to solve problems,
+            the reason why I went to various math Olympics where I achieved great results.</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <div class="container">
+          <h3>Things I Can Do</h3>
+          <p>My previous experiences enforced me to work in multinational teams, under stressful conditions, solving
+            problems, and keeping myself
+            motivated at all times. Internationally experienced and multilingual in English, Italian, and Romanian.</p>
+          <ul class="feature-icons">
+            <li class="icon solid fa-code">Write simple code that follows the style guides</li>
+            <li class="icon solid fa-fast-forward">Frontend (React/Redux/ES6)</li>
+            <li class="icon solid fa-fast-backward">Backend (Rails/Node/Laravel)</li>
+            <li class="icon solid fa-coffee">Tooling (Git/Heroku/SEO)</li>
+            <li class="icon solid fa-bolt">Data structures and algorithms</li>
+            <li class="icon solid fa-users">Remote experience/teamwork/fast learner/motivated</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <div class="container">
+          <h3>A Few Accomplishments</h3>
+          <p>During my self-taught journey, I managed to deploy and maintain web solutions for companies and I got
+            numerous certifications from different online course platforms by building projects.</p>
+          <div class="features">
+            <article>
+              <a href="https://www.aurasjobs.ro?lang=en" target="_blank" class="image"><img src="images/app1.png"
+                  alt="" /></a>
+              <div class="inner">
+                <h4>Recruiting agency website</h4>
+                <p>Production website that helps the client showcase the business and receive new applications and
+                  contact requests made through the website forms. Has internationalization in Romanian and English.</p>
+                <p>Laravel/PHP, MySQL, HTML, Jquery, Sass, Mobile responsive, Bootstrap, SEO optimization</p>
+                <ul class="actions">
+                  <li><a href="https://www.aurasjobs.ro?lang=en" class="button small primary solid" target="_blank"><i
+                        class="fas fa-desktop mr-1"></i> Live
+                      demo</a></li>
+                  <li><a href="https://github.com/cristianCeamatu/aurasjobs.ro-laravel" class="button small solid"
+                      target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      code</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article>
+              <a href="https://erulment.ro/" target="_blank" class="image"><img src="images/app2.png" alt="" /></a>
+              <div class="inner">
+                <h4>Bearings online shop</h4>
+                <p>clients can filter through 18.000 bearings catalog by dimensions and name, add products to the cart
+                  and ask for price offers. Both the owner and the client receive an email notification with the cart
+                  details. </p>
+                <p>PHP, MySQL, JQuery, Ajax, HTML, CSS, Bootstrap, SEO optimization</p>
+                <ul class="actions">
+                  <li><a href="https://erulment.ro/" class="button small primary solid" target="_blank"><i
+                        class="fas fa-desktop mr-1"></i> Live
+                      demo</a></li>
+                  <li><a href="https://github.com/cristianCeamatu/erulment.ro" class="button small solid"
+                      target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      code</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article>
+              <a href="https://rails-bible-talks.herokuapp.com/" target="_blank" class="image"><img
+                  src="images/app3.jpg" alt="" /></a>
+              <div class="inner">
+                <h4>Bible talks social app - built time 40 hours</h4>
+                <p> Mobile responsive app where users can log in with their Github/Twitter accounts. Based on a Twitter
+                  redesign. <br>
+                  The app is tested using RSpec and uses AWS S3 to manage the file uploads.</p>
+                <p>Ruby, Rails, RSpec, PostgreSQL, Omniauth, AWS S3, Heroku, Bootstrap</p>
+                <ul class="actions">
+                  <li><a href="https://rails-bible-talks.herokuapp.com/" class="button small primary solid"
+                      target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                      demo</a></li>
+                  <li><a href="https://github.com/cristianCeamatu/rails-bible-talks-social-app"
+                      class="button small solid" target="_blank"><i class="fas fa-code-branch mr-1"></i>
+                      Source
+                      code</a>
+                  </li>
+                  <li><a href="https://youtu.be/olG-GV_3tq4" class="button small solid" target="_blank"><i
+                        class="fas fa-video mr-1"></i>Video</a></li>
+                </ul>
+              </div>
+            </article>
+
+            <article>
+              <a href="https://aurasjobs-mern.herokuapp.com/" target="_blank" class="image"><img src="images/app1.png"
+                  alt="" /></a>
+              <div class="inner">
+                <h4>Recruiting agency website rebuild 2020</h4>
+                <p>Refactored the original Laravel/PHP website to the MERN language stack. Deployable after
+                  internationalization</p>
+                <p>Node, MongoDB, Express, React, Mobile responsive</p>
+                <ul class="actions">
+                  <li><a href="https://aurasjobs-mern.herokuapp.com/" class="button small primary solid"
+                      target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                      demo</a></li>
+                  <li><a href="https://github.com/cristianCeamatu/aurasjobs.ro-mern" class="button small solid"
+                      target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      code</a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article>
+              <a href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
+                target="_blank" class="image"><img src="images/app4.png" alt="" /></a>
+              <div class="inner">
+                <h4>Handcrafts shop - built time 16 hours</h4>
+                <p>This is a capstone/exam project for the Microverse module HTML/CSS. It is a Crafts(handmades) website
+                  with index and search pages.</p>
+                <p>HTML, CSS3/SCSS, Bootstrap, Font awesome icons, Webhint/Stylelint linters, NPM scripts</p>
+                <ul class="actions">
+                  <li><a
+                      href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
+                      class="button small primary solid" target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                      demo</a></li>
+                  <li><a
+                      href="https://github.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics"
+                      class="button small solid" target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      code</a>
+                  </li>
+                  <li><a href="https://youtu.be/6E3URZOQG-E" class="button small solid"><i class="fas fa-video mr-1"
+                        target="_blank"></i>Video</a></li>
+                </ul>
+              </div>
+            </article>
+
+            <article>
+              <a href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
+                target="_blank" class="image"><img src="images/app5.png" alt="" /></a>
+              <div class="inner">
+                <h4>Telegram Chat - Search Bot - built time 24 hours</h4>
+                <p>Telegram Bot that can search on Wikipedia/Google domains or get you 3 random Wikipedia articles. It
+                  also sends you
+                  random funny Gifs every time you write something else in the chat or you use the /start and /stop
+                  commands.</p>
+                <p>HTML, CSS3/SCSS, Bootstrap, Font awesome icons, Webhint/Stylelint linters, NPM scripts</p>
+                <ul class="actions">
+                  <li><a
+                      href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
+                      class="button small primary solid" target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                      demo</a></li>
+                  <li><a
+                      href="https://github.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics"
+                      class="button small solid" target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      code</a>
+                  </li>
+                  <li><a href="https://youtu.be/xwLWxaWFfRg" class="button small solid"><i class="fas fa-video mr-1"
+                        target="_blank"></i>Video</a></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact me -->
+      <section id="contact">
+        <div class="container">
+          <h3>Contact Me</h3>
+          <p>If you feel that my skills fit your requirements <span class="h3">🎯</span> I am confident that I will
+            become one of your
+            top
+            employees <span class="h3">👨‍💻🥇</span></p>
+          <form method="post" action="#">
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+              <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+              <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+              <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+              <div class="col-12">
+                <ul class="actions justify-content-center">
+                  <li class="w-50"><input type="submit" class="primary w-100" value="Send Message" /></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; <a href="http://cristian.adydev.com">Cristian Viorel Ceamatu</a>. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: [
+        'These are the default values...',
+        'You know what you should do?',
+        'Use your own!',
+        'Have a great day!'
+      ]
+    });
+  </script>
+
 </body>
 
 </html>
