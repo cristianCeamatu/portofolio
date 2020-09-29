@@ -1,47 +1,60 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="favicon.png">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/main.css" />
 
   <title>Cristian Viorel Ceamatu | Portofolio</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76863419-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-76863419-3');
+  </script>
 </head>
 
 <body class="is-preload">
-  <!-- <span id="typed"></span> -->
 
   <!-- Header -->
   <section id="header">
     <header>
       <span class="image avatar"><img src="images/avatar.jpg" alt="Ceamatu Cristian Viorel" /></span>
       <h1 id="logo"><a href="#">Cristian Viorel Ceamatu</a></h1>
-      <p>Passionate Full-stack Web Developer <br> Team player</p>
+      <p>Full-stack Web Developer</p>
+      <p class="mt-0">Team player</p>
     </header>
     <nav id="nav">
       <ul>
-        <li><a href="#one" class="active">About</a></li>
-        <li><a href="#two">Things I Can Do</a></li>
-        <li><a href="#three">A Few Accomplishments</a></li>
-        <li><a href="#four">Contact</a></li>
+        <li><a href="#showcase" class="active">About</a></li>
+        <li><a href="#skills">Things I Can Do</a></li>
+        <li><a href="#experience">A Few Accomplishments</a></li>
+        <li><a href="#certifications">And some certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <footer>
       <ul class="icons">
-        <li><a href="https://www.linkedin.com/in/ceamatu-cristian/" target="_blank"
+        <li><a href="https://www.linkedin.com/in/ceamatu-cristian/" target="_blank" rel="noopener noreferrer"
             class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-        <li><a href="https://github.com/cristianCeamatu" target="_blank" class="icon brands fa-github"><span
-              class="label">Github</span></a></li>
-        <li><a href="https://twitter.com/CristianCeamatu" target="_blank" class="icon brands fa-twitter"><span
-              class="label">Twitter</span></a></li>
-        <li><a href="mailto:cristian.ceamatu@gmail.com" target="_blank" class="icon solid fa-envelope"><span
-              class="label">Email</span></a></li>
-        <li><a href="https://www.facebook.com/ceamatu.cristian/" target="_blank" class="icon brands fa-facebook-f"><span
-              class="label">Facebook</span></a></li>
+        <li><a href="https://github.com/cristianCeamatu" target="_blank" rel="noopener noreferrer"
+            class="icon brands fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://twitter.com/CristianCeamatu" target="_blank" rel="noopener noreferrer"
+            class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="mailto:cristian.ceamatu@gmail.com" target="_blank" rel="noopener noreferrer"
+            class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="https://codepen.io/crisDevMM" target="_blank" rel="noopener noreferrer"
+            class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
       </ul>
     </footer>
   </section>
@@ -55,7 +68,9 @@
       <!-- Showcase -->
       <section id="showcase">
         <div class="image main" data-position="center">
-          <img src="images/banner.jpg" alt="" />
+          <img src="images/banner2.jpg" alt="Watchng code through glasses" />
+          <div class="blur"></div>
+          <div id="particles-js"></div>
         </div>
         <div class="container">
           <header class="major">
@@ -96,19 +111,19 @@
             numerous certifications from different online course platforms by building projects.</p>
           <div class="features">
             <article>
-              <a href="https://www.aurasjobs.ro?lang=en" target="_blank" class="image"><img src="images/app1.png"
-                  alt="" /></a>
+              <a href="https://www.aurasjobs.ro?lang=en" target="_blank" rel="noopener noreferrer" class="image"><img
+                  src="images/app1.png" alt="" /></a>
               <div class="inner">
                 <h4>Recruiting agency website</h4>
                 <p>Production website that helps the client showcase the business and receive new applications and
                   contact requests made through the website forms. Has internationalization in Romanian and English.</p>
                 <p>Laravel/PHP, MySQL, HTML, Jquery, Sass, Mobile responsive, Bootstrap, SEO optimization</p>
                 <ul class="actions">
-                  <li><a href="https://www.aurasjobs.ro?lang=en" class="button small primary solid" target="_blank"><i
-                        class="fas fa-desktop mr-1"></i> Live
+                  <li><a href="https://www.aurasjobs.ro?lang=en" class="button small primary solid" target="_blank"
+                      rel="noopener noreferrer"><i class="fas fa-desktop mr-1"></i> Live
                       demo</a></li>
                   <li><a href="https://github.com/cristianCeamatu/aurasjobs.ro-laravel" class="button small solid"
-                      target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      target="_blank" rel="noopener noreferrer"><i class="fas fa-code-branch mr-1"></i> Source
                       code</a>
                   </li>
                 </ul>
@@ -116,19 +131,20 @@
             </article>
 
             <article>
-              <a href="https://erulment.ro/" target="_blank" class="image"><img src="images/app2.png" alt="" /></a>
+              <a href="https://erulment.ro/" target="_blank" rel="noopener noreferrer" class="image"><img
+                  src="images/app2.png" alt="" /></a>
               <div class="inner">
                 <h4>Bearings online shop</h4>
-                <p>clients can filter through 18.000 bearings catalog by dimensions and name, add products to the cart
+                <p>Clients can filter through 18.000 bearings catalog by dimensions and name, add products to the cart
                   and ask for price offers. Both the owner and the client receive an email notification with the cart
                   details. </p>
                 <p>PHP, MySQL, JQuery, Ajax, HTML, CSS, Bootstrap, SEO optimization</p>
                 <ul class="actions">
-                  <li><a href="https://erulment.ro/" class="button small primary solid" target="_blank"><i
-                        class="fas fa-desktop mr-1"></i> Live
+                  <li><a href="https://erulment.ro/" class="button small primary solid" target="_blank"
+                      rel="noopener noreferrer"><i class="fas fa-desktop mr-1"></i> Live
                       demo</a></li>
                   <li><a href="https://github.com/cristianCeamatu/erulment.ro" class="button small solid"
-                      target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      target="_blank" rel="noopener noreferrer"><i class="fas fa-code-branch mr-1"></i> Source
                       code</a>
                   </li>
                 </ul>
@@ -136,8 +152,8 @@
             </article>
 
             <article>
-              <a href="https://rails-bible-talks.herokuapp.com/" target="_blank" class="image"><img
-                  src="images/app3.jpg" alt="" /></a>
+              <a href="https://rails-bible-talks.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                class="image"><img src="images/app3.jpg" alt="" /></a>
               <div class="inner">
                 <h4>Bible talks social app - built time 40 hours</h4>
                 <p> Mobile responsive app where users can log in with their Github/Twitter accounts. Based on a Twitter
@@ -146,33 +162,34 @@
                 <p>Ruby, Rails, RSpec, PostgreSQL, Omniauth, AWS S3, Heroku, Bootstrap</p>
                 <ul class="actions">
                   <li><a href="https://rails-bible-talks.herokuapp.com/" class="button small primary solid"
-                      target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                      target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop mr-1"></i> Live
                       demo</a></li>
                   <li><a href="https://github.com/cristianCeamatu/rails-bible-talks-social-app"
-                      class="button small solid" target="_blank"><i class="fas fa-code-branch mr-1"></i>
+                      class="button small solid" target="_blank" rel="noopener noreferrer"><i
+                        class="fas fa-code-branch mr-1"></i>
                       Source
                       code</a>
                   </li>
-                  <li><a href="https://youtu.be/olG-GV_3tq4" class="button small solid" target="_blank"><i
-                        class="fas fa-video mr-1"></i>Video</a></li>
+                  <li><a href="https://youtu.be/olG-GV_3tq4" class="button small solid" target="_blank"
+                      rel="noopener noreferrer"><i class="fas fa-video mr-1"></i>Video</a></li>
                 </ul>
               </div>
             </article>
 
             <article>
-              <a href="https://aurasjobs-mern.herokuapp.com/" target="_blank" class="image"><img src="images/app1.png"
-                  alt="" /></a>
+              <a href="https://aurasjobs-mern.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                class="image"><img src="images/app1.png" alt="" /></a>
               <div class="inner">
                 <h4>Recruiting agency website rebuild 2020</h4>
                 <p>Refactored the original Laravel/PHP website to the MERN language stack. Deployable after
                   internationalization</p>
                 <p>Node, MongoDB, Express, React, Mobile responsive</p>
                 <ul class="actions">
-                  <li><a href="https://aurasjobs-mern.herokuapp.com/" class="button small primary solid"
-                      target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                  <li><a href="https://aurasjobs-mern.herokuapp.com/" class="button small primary solid" target="_blank"
+                      rel="noopener noreferrer"><i class="fas fa-desktop mr-1"></i> Live
                       demo</a></li>
                   <li><a href="https://github.com/cristianCeamatu/aurasjobs.ro-mern" class="button small solid"
-                      target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      target="_blank" rel="noopener noreferrer"><i class="fas fa-code-branch mr-1"></i> Source
                       code</a>
                   </li>
                 </ul>
@@ -181,7 +198,7 @@
 
             <article>
               <a href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
-                target="_blank" class="image"><img src="images/app4.png" alt="" /></a>
+                target="_blank" rel="noopener noreferrer" class="image"><img src="images/app4.png" alt="" /></a>
               <div class="inner">
                 <h4>Handcrafts shop - built time 16 hours</h4>
                 <p>This is a capstone/exam project for the Microverse module HTML/CSS. It is a Crafts(handmades) website
@@ -190,22 +207,24 @@
                 <ul class="actions">
                   <li><a
                       href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
-                      class="button small primary solid" target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                      class="button small primary solid" target="_blank" rel="noopener noreferrer"><i
+                        class="fas fa-desktop mr-1"></i> Live
                       demo</a></li>
                   <li><a
                       href="https://github.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics"
-                      class="button small solid" target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                      class="button small solid" target="_blank" rel="noopener noreferrer"><i
+                        class="fas fa-code-branch mr-1"></i> Source
                       code</a>
                   </li>
-                  <li><a href="https://youtu.be/6E3URZOQG-E" class="button small solid"><i class="fas fa-video mr-1"
-                        target="_blank"></i>Video</a></li>
+                  <li><a href="https://youtu.be/6E3URZOQG-E" class="button small solid" target="_blank"
+                      rel="noopener noreferrer"><i class="fas fa-video mr-1"></i>Video</a></li>
                 </ul>
               </div>
             </article>
 
             <article>
-              <a href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
-                target="_blank" class="image"><img src="images/app5.png" alt="" /></a>
+              <a href="https://ruby-telegram-search-bot.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                class="image"><img src="images/app5.png" alt="" /></a>
               <div class="inner">
                 <h4>Telegram Chat - Search Bot - built time 24 hours</h4>
                 <p>Telegram Bot that can search on Wikipedia/Google domains or get you 3 random Wikipedia articles. It
@@ -214,17 +233,16 @@
                   commands.</p>
                 <p>HTML, CSS3/SCSS, Bootstrap, Font awesome icons, Webhint/Stylelint linters, NPM scripts</p>
                 <ul class="actions">
-                  <li><a
-                      href="https://raw.githack.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics/dev/index.html"
-                      class="button small primary solid" target="_blank"><i class="fas fa-desktop mr-1"></i> Live
+                  <li><a href="https://ruby-telegram-search-bot.herokuapp.com/" class="button small primary solid"
+                      target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop mr-1"></i> Live
                       demo</a></li>
-                  <li><a
-                      href="https://github.com/cristianCeamatu/microverse-HTML-CSS-capstone-project-online-shop-for-electronics"
-                      class="button small solid" target="_blank"><i class="fas fa-code-branch mr-1"></i> Source
+                  <li><a href="https://github.com/cristianCeamatu/microverse-ruby-telegram-bot"
+                      class="button small solid" target="_blank" rel="noopener noreferrer"><i
+                        class="fas fa-code-branch mr-1"></i> Source
                       code</a>
                   </li>
-                  <li><a href="https://youtu.be/xwLWxaWFfRg" class="button small solid"><i class="fas fa-video mr-1"
-                        target="_blank"></i>Video</a></li>
+                  <li><a href="https://youtu.be/xwLWxaWFfRg" class="button small solid" target="_blank"
+                      rel="noopener noreferrer"><i class="fas fa-video mr-1"></i>Video</a></li>
                 </ul>
               </div>
             </article>
@@ -232,40 +250,101 @@
         </div>
       </section>
 
+      <!-- Certifications -->
+      <section id="certifications">
+        <h4 class="w-75 mx-auto mt-5">Certifications</h4>
+        <div class="table-wrapper w-75 mx-auto mb-4">
+          <table>
+            <thead>
+              <tr>
+                <th>Stack</th>
+                <th>Link</th>
+                <th>Organization</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ruby</td>
+                <td><a href="https://www.credential.net/798c366e-6ec6-495b-b270-dcf8fffa913d#gs.gv1yi0" target="_blank"
+                    rel="noopener noreferrer">Certificate of completition Ruby/Databases module</a></td>
+                <td><a href="https://www.microverse.org/" target="_blank" rel="noopener noreferrer">Microverse</a></td>
+              </tr>
+              <tr>
+                <td>HTML/CSS</td>
+                <td><a href="https://www.credential.net/07908c53-e3b4-4fda-8c61-af160c79669d#gs.gv2bb4" target="_blank"
+                    rel="noopener noreferrer">Certificate of completition HTML/CSS module</a></td>
+                <td><a href="https://www.microverse.org/" target="_blank" rel="noopener noreferrer">Microverse</a></td>
+              </tr>
+              <tr>
+                <td>Responsive web design</td>
+                <td><a href="https://www.freecodecamp.org/certification/fcc84a24bc1/responsive-web-design"
+                    target="_blank" rel="noopener noreferrer">Developer certification - 300 hours of coursework</a></td>
+                <td><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Freecodecamp</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Algorithms and Data structures</td>
+                <td><a
+                    href="https://www.freecodecamp.org/certification/fcc84a24bc1/javascript-algorithms-and-data-structures"
+                    target="_blank" rel="noopener noreferrer">Javascript algorithms and data structures certification
+                    - 300 hours of coursework</a></td>
+                <td><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Freecodecamp</a>
+                </td>
+              </tr>
+              <tr>
+                <td>React/Redux</td>
+                <td><a href="https://www.freecodecamp.org/certification/fcc84a24bc1/front-end-libraries" target="_blank"
+                    rel="noopener noreferrer">Front End Libraries certification
+                    - 300 hours of coursework</a></td>
+                <td><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Freecodecamp</a>
+                </td>
+              </tr>
+              <tr>
+                <td>SEO</td>
+                <td><a href="downloads/SEO_Diplomas.pdf" target="_blank" rel="noopener noreferrer">Multiple SEO
+                    diplomas</a></td>
+                <td><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <!-- Contact me -->
       <section id="contact">
-        <div class="container">
+        <div class="container my-4">
           <h3>Contact Me</h3>
-          <p>If you feel that my skills fit your requirements <span class="h3">🎯</span> I am confident that I will
+          <p>If you feel that my skills fit your requirements <span class="h3">🎯</span><br>
+            I am confident that I will
             become one of your
             top
             employees <span class="h3">👨‍💻🥇</span></p>
-          <form method="post" action="#">
-            <div class="row gtr-uniform">
-              <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-              <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-              <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-              <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-              <div class="col-12">
-                <ul class="actions justify-content-center">
-                  <li class="w-50"><input type="submit" class="primary w-100" value="Send Message" /></li>
-                </ul>
-              </div>
-            </div>
-          </form>
+          <ul class="icons">
+            <li><a href="mailto:cristian.ceamatu@gmail.com" target="_blank" rel="noopener noreferrer"
+                class="icon solid h3 pr-1"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="tel:0040725085231" target="_blank" rel="noopener noreferrer" class="icon brands h3 px-1"><i
+                  class="fas fa-phone-alt"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/ceamatu-cristian/" target="_blank" rel="noopener noreferrer"
+                class="icon brands h3 px-1"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://github.com/cristianCeamatu" target="_blank" rel="noopener noreferrer"
+                class="icon solid h3 px-1"><i class="fab fa-github"></i></a></li>
+          </ul>
         </div>
       </section>
     </div>
 
     <!-- Footer -->
-    <section id="footer">
+    <div id="footer">
       <div class="container">
         <ul class="copyright">
           <li>&copy; <a href="http://cristian.adydev.com">Cristian Viorel Ceamatu</a>. All rights reserved.</li>
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
       </div>
-    </section>
+    </div>
 
   </div>
 
@@ -277,17 +356,8 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    var typed = new Typed('#typed', {
-      strings: [
-        'These are the default values...',
-        'You know what you should do?',
-        'Use your own!',
-        'Have a great day!'
-      ]
-    });
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
