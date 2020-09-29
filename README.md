@@ -6,7 +6,7 @@
 
 ## Website screenshot
 
-![screenshot](./app-screenshot2.png)
+![screenshot](.github/app-screenshot2.png)
 
 ## Built With
 
