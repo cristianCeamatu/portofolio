@@ -5,29 +5,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="icon" type="image/png" href="favicon.png">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/main.css" />
 
   <title>Cristian Viorel Ceamatu | Portofolio</title>
 </head>
 
 <body class="is-preload">
-  <!-- <span id="typed"></span> -->
 
   <!-- Header -->
   <section id="header">
     <header>
       <span class="image avatar"><img src="images/avatar.jpg" alt="Ceamatu Cristian Viorel" /></span>
       <h1 id="logo"><a href="#">Cristian Viorel Ceamatu</a></h1>
-      <p>Passionate Full-stack Web Developer <br> Team player</p>
+      <p>Full-stack Web Developer <br> Team player</p>
     </header>
     <nav id="nav">
       <ul>
-        <li><a href="#one" class="active">About</a></li>
-        <li><a href="#two">Things I Can Do</a></li>
-        <li><a href="#three">A Few Accomplishments</a></li>
-        <li><a href="#four">Contact</a></li>
+        <li><a href="#showcase" class="active">About</a></li>
+        <li><a href="#skills">Things I Can Do</a></li>
+        <li><a href="#experience">A Few Accomplishments</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <footer>
@@ -55,7 +56,9 @@
       <!-- Showcase -->
       <section id="showcase">
         <div class="image main" data-position="center">
-          <img src="images/banner.jpg" alt="" />
+          <img src="images/banner2.jpg" alt="Watchng code through glasses" />
+          <div class="blur"></div>
+          <div id="particles-js"></div>
         </div>
         <div class="container">
           <header class="major">
@@ -236,23 +239,23 @@
       <section id="contact">
         <div class="container">
           <h3>Contact Me</h3>
-          <p>If you feel that my skills fit your requirements <span class="h3">🎯</span> I am confident that I will
+          <p>If you feel that my skills fit your requirements <span class="h3">🎯</span><br>
+            I am confident that I will
             become one of your
             top
             employees <span class="h3">👨‍💻🥇</span></p>
-          <form method="post" action="#">
-            <div class="row gtr-uniform">
-              <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-              <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-              <div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-              <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-              <div class="col-12">
-                <ul class="actions justify-content-center">
-                  <li class="w-50"><input type="submit" class="primary w-100" value="Send Message" /></li>
-                </ul>
-              </div>
-            </div>
-          </form>
+          <ul class="icons">
+            <li><a href="mailto:cristian.ceamatu@gmail.com" target="_blank" class="icon solid h3 pr-4"><i
+                  class="fas fa-envelope"></i></a></li>
+            <li><a href="tel:0040725085231" target="_blank" class="icon brands h3 px-4"><i
+                  class="fas fa-phone-alt"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/ceamatu-cristian/" target="_blank" class="icon brands h3 px-4"><i
+                  class="fab fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://github.com/cristianCeamatu" target="_blank" class="icon solid h3 px-4"><i
+                  class="fab fa-github"></i></a></li>
+          </ul>
         </div>
       </section>
     </div>
@@ -277,17 +280,8 @@
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    var typed = new Typed('#typed', {
-      strings: [
-        'These are the default values...',
-        'You know what you should do?',
-        'Use your own!',
-        'Have a great day!'
-      ]
-    });
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>

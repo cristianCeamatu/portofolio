@@ -1761,6 +1761,26 @@ input[type="button"],
   #main > section:first-child {
     border-top: 0; }
 
+#main #showcase .image {
+  position: relative; }
+  #main #showcase .image img {
+    object-position: 50% 55%; }
+  #main #showcase .image .blur {
+    background-color: rgba(154, 210, 203, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+#main #showcase #particles-js {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+
 /* Footer */
 #footer {
   background: #fafafa;

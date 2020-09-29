@@ -1159,7 +1159,7 @@
 		position: fixed;
 		text-align: center;
 		top: 0;
-		width: $size-header;
+    width: $size-header;
 
 		@if _misc(header-side) == 'right' {
 			right: 0;
@@ -1291,7 +1291,36 @@
 			&:first-child {
 				border-top: 0;
 			}
-		}
+    }
+    
+    #showcase {
+
+      .image {
+        position: relative;
+
+        img {
+          object-position: 50% 55%;
+        }
+
+        .blur {
+          background-color: rgba(154, 210, 203, 0.2);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+
+      #particles-js {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+      }
+    }
 	}
 
 /* Footer */
