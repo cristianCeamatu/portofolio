@@ -30,9 +30,9 @@ $font: (
 // Palette.
 $palette: (
   bg:					#fff,
-  fg:					#888,
-  fg-bold:			#777,
-  fg-light:			#aaa,
+  fg:					rgb(3, 3, 3),
+  fg-bold:			rgb(3, 3, 3),
+  fg-light:			rgb(24, 23, 23),
   border:				#f4f4f4,
   border-bg:			#fafafa,
   border2:			#e4e4e4,
@@ -46,10 +46,10 @@ $palette: (
     fg-light:		mix(#3f729b, #fff, 40%)
   ),
   accent2: (
-    bg:				#989898,
+    bg:				#666666,
     fg-bold:		#fff,
-    fg:				mix(#989898, #fff, 25%),
-    fg-light:		mix(#989898, #fff, 40%)
+    fg:				mix(#666666, #fff, 25%),
+    fg-light:		mix(#666666, #fff, 40%)
   ),
   header: (
     bg:				#3f729b,

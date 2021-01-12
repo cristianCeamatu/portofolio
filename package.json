@@ -7,7 +7,7 @@
     "test": "npm run webhint && echo \"✅✅✅ All tests passed ✅✅✅\"",
     "webhint": "hint .",
     "stylelint": "stylelint **/*.css",
-    "scss": "node-sass --watch assets/sass -o assets/css"
+    "start": "node-sass --watch assets/sass -o assets/css"
   },
   "repository": {
     "type": "git",
